@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/rentals'; // Ganti dengan URL backend yang sesuai
+const API_URL = `${process.env.REACT_APP_API_URL}/api/rentals`; // Ganti dengan URL backend yang sesuai
 
 // Fungsi untuk mengambil semua penyewaan
 export const fetchRentals = async (token) => {
