@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/shifts';  // Sesuaikan dengan URL backend Anda
+const API_URL = `${process.env.REACT_APP_API_URL}/api/shifts`;  
 
 // Mengambil semua shift
 const getShifts = async (token) => {
