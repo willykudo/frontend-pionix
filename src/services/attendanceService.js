@@ -2,7 +2,7 @@ import axios from 'axios';
 import moment from 'moment-timezone'; // Ensure moment-timezone is installed
 
 // Base URL for the API
-const API_URL = '/api/attendance';
+const API_URL = `${process.env.REACT_APP_API_URL}/api/attendance`;
 
 // Function to add check-in data
 const addCheckIn = async (checkInData, checkInImage) => {
