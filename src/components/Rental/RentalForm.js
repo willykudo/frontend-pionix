@@ -34,7 +34,7 @@ const RentalForm = ({ onSubmitSuccess, currentRental }) => {
                 customerName: isStatusReset ? '' : currentRental.customerName || '',
             });
 
-            setPreviewImage(currentRental.rentalImage ? `http://localhost:3000/${currentRental.rentalImage}` : null);
+            setPreviewImage(currentRental.rentalImage ? `https://backend-pionix.onrender.com/${currentRental.rentalImage}` : null);
         }
     }, [currentRental]);
 
