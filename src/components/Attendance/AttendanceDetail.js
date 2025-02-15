@@ -78,8 +78,8 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
                 shiftStartTime: attendance.shiftStartTime ? moment(attendance.shiftStartTime).tz('Asia/Jakarta').format('YYYY-MM-DDTHH:mm') : '',
                 shiftEndTime: attendance.shiftEndTime ? moment(attendance.shiftEndTime).tz('Asia/Jakarta').format('YYYY-MM-DDTHH:mm') : ''
             });
-            setPreviewCheckInImage(attendance.checkInImage);
-            setPreviewCheckOutImage(attendance.checkOutImage);
+            setPreviewCheckInImage(`https://backend-pionix.onrender.com/uploads/${attendance.checkInImage}`);
+            setPreviewCheckOutImage(`https://backend-pionix.onrender.com/uploads/${attendance.checkOutImage}`);
         }
     }, [attendance]);
 
