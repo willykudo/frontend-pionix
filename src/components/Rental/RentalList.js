@@ -175,7 +175,7 @@ const RentalList = () => {
                         className={`bg-white rounded-lg shadow-md overflow-hidden ${getStatusClass(rental.rentalStatus)}`}
                     >
                         <img
-                            src={`https://backend-pionix.onrender.com/uploads/${rental.rentalImage}`}
+                            src={`https://backend-pionix.onrender.com/${rental.rentalImage}`}
                             alt={rental.equipmentName}
                             className="w-full h-48 object-cover"
                         />
