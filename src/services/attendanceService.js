@@ -103,7 +103,7 @@ const updateAttendance = async (id, attendanceData, checkInImage, checkOutImage)
     }
 
     try {
-        const response = await axios.put(`/api/attendance/${id}`, formData, {
+        const response = await axios.put(`${API_URL}/${id}`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
