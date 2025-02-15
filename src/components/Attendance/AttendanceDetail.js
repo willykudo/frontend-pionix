@@ -68,6 +68,8 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
         fetchUser();
 
         if (attendance) {
+        const API_URL = `${process.env.REACT_APP_API_URL}`
+            
             setEditableAttendance({
                 employeeName: attendance.employeeName || '',
                 checkInTime: attendance.checkInTime ? moment(attendance.checkInTime).tz('Asia/Jakarta').format('YYYY-MM-DDTHH:mm') : '',
@@ -78,8 +80,8 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
                 shiftStartTime: attendance.shiftStartTime ? moment(attendance.shiftStartTime).tz('Asia/Jakarta').format('YYYY-MM-DDTHH:mm') : '',
                 shiftEndTime: attendance.shiftEndTime ? moment(attendance.shiftEndTime).tz('Asia/Jakarta').format('YYYY-MM-DDTHH:mm') : ''
             });
-            setPreviewCheckInImage(attendance.checkInImage);
-            setPreviewCheckOutImage(attendance.checkOutImage);
+            setPreviewCheckInImage(`${API_URL}/${attendance.checkInImage}`);
+            setPreviewCheckOutImage(`${API_URL}/${attendance.checkOutImage}`);
         }
     }, [attendance]);
 
