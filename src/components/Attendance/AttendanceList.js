@@ -168,7 +168,7 @@ const AttendanceList = () => {
                                             <td className="py-3 px-6 text-sm">
                                                 {attendance.checkInImage ? (
                                                     <img
-                                                        src={`http://localhost:3000/${attendance.checkInImage}`}
+                                                        src={`https://backend-pionix.onrender.com/${attendance.checkInImage}`}
                                                         alt="Check In"
                                                         className="w-12 h-12 object-cover rounded-lg border border-gray-300"
                                                     />
@@ -179,7 +179,7 @@ const AttendanceList = () => {
                                             <td className="py-3 px-6 text-sm">
                                                 {attendance.checkOutImage ? (
                                                     <img
-                                                        src={`http://localhost:3000/${attendance.checkOutImage}`}
+                                                        src={`https://backend-pionix.onrender.com/${attendance.checkOutImage}`}
                                                         alt="Check Out"
                                                         className="w-12 h-12 object-cover rounded-lg border border-gray-300"
                                                     />
