@@ -186,7 +186,7 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
                                 type="text"
                                 name="employeeName"
                                 value={editableAttendance.employeeName}
-                                onChange={handleChange}
+                                disabled
                                 className="w-full px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg text-gray-700"
                             />
                         </label>
@@ -268,7 +268,7 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
                                 type="text"
                                 name="status"
                                 value={editableAttendance.status}
-                                readOnly
+                                disabled
                                 className="w-full px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg text-gray-700"
                             />
                         </label>
