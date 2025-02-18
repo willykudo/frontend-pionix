@@ -211,8 +211,7 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
                                     <img
                                         src={previewCheckInImage}
                                         alt="Check-in"
-                                        className="w-24 h-24 object-cover my-2 rounded-lg shadow-md"
-                                        style={{ pointerEvents: 'none' }} // Mencegah klik pada gambar
+                                        className="w-24 h-24 object-cover my-2 rounded-lg shadow-md transform transition-transform hover:scale-105"
                                     />
                                 ) : (
                                     <p className="text-gray-500">No image available</p>
@@ -222,11 +221,10 @@ const AttendanceDetail = ({ attendance, onClose, fetchAttendances }) => {
                                     name="checkInImage"
                                     accept="image/*"
                                     onChange={(e) => handleImageChange(e, 'checkInImage')}
-                                    className="w-full px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg text-gray-700 cursor-pointer"
+                                    className="w-full px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg text-gray-700"
                                 />
                             </div>
                         </label>
-
 
                         {/* Check Out Time */}
                         <label className="block mb-4">
